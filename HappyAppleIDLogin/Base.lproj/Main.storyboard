@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aIN-oe-ulp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="HXn-J2-uKR">
+            <objects>
+                <viewController id="aIN-oe-ulp" customClass="ViewController" customModule="HappyAppleIDLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nxw-ym-fjc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="AUH-Za-NqM"/>
+                    </view>
+                    <connections>
+                        <segue destination="pEl-3v-GLx" kind="show" identifier="segue" id="o02-9u-Lng"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rJm-XR-8Yd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="132"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="S8N-9J-8Km">
+            <objects>
+                <viewController id="pEl-3v-GLx" customClass="secondViewController" customModule="HappyAppleIDLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WAj-dC-fuD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LS9-gs-pUa">
+                                <rect key="frame" x="30" y="409" width="354" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LS9-gs-pUa" firstAttribute="centerY" secondItem="WAj-dC-fuD" secondAttribute="centerY" id="FqP-sE-nlQ"/>
+                            <constraint firstItem="5BQ-9N-OpB" firstAttribute="trailing" secondItem="LS9-gs-pUa" secondAttribute="trailing" constant="30" id="UQX-4g-zHm"/>
+                            <constraint firstItem="LS9-gs-pUa" firstAttribute="leading" secondItem="5BQ-9N-OpB" secondAttribute="leading" constant="30" id="qE3-3R-aIV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5BQ-9N-OpB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="k1W-dR-1Me"/>
+                    <connections>
+                        <outlet property="detailLabel" destination="LS9-gs-pUa" id="yBd-5Q-Sbw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lh9-48-lLV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="132"/>
+        </scene>
+    </scenes>
+</document>
